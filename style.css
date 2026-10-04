@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #faf8f3;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(250, 248, 243, 0.95);
+    border-bottom: 1px solid #eee;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.small-title {
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 80px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    font-style: italic;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* BOUTONS */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary {
+    background: #c58b32;
+    color: white;
+}
+
+.primary:hover {
+    transform: translateY(-3px);
+}
+
+.secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+.secondary:hover {
+    background: white;
+    color: #222;
+}
+
+
+/* SECTIONS */
+
+.section {
+    max-width: 1000px;
+    margin: auto;
+
+    padding: 90px 25px;
+
+    text-align: center;
+}
+
+.section-label {
+    color: #c58b32;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.section h2 {
+    font-size: clamp(30px, 5vw, 50px);
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 600px;
+    margin: auto;
+
+    color: #666;
+    font-size: 17px;
+}
+
+
+/* MENU */
+
+.menu-section {
+    max-width: 900px;
+}
+
+.menu-card {
+    margin-top: 40px;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.menu-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.menu-card p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* HORAIRES */
+
+.hours {
+    max-width: 500px;
+    margin: 30px auto 0;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.hours div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+/* CONTACT */
+
+.contact-section {
+    background: #222;
+    color: white;
+
+    max-width: none;
+}
+
+.contact-section p {
+    margin: 10px 0;
+}
+
+.contact-section .buttons {
+    margin-top: 30px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 35px 20px;
+
+    background: #111;
+    color: white;
+}
+
+footer p {
+    color: #aaa;
+    margin-top: 5px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hours div {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
