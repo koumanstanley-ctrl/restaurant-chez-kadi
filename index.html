@@ -1,30 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Restaurant chez Kadi</title>
+    <title>Restaurant Chez Kadi | Adiopodoumé</title>
+
+    <meta
+        name="description"
+        content="Restaurant Chez Kadi à Adiopodoumé. Découvrez une cuisine généreuse et conviviale."
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
     <header>
+
         <nav class="navbar">
-            <div class="logo">Chez Kadi</div>
+
+            <a href="#accueil" class="logo">
+                Chez Kadi
+            </a>
 
             <div class="nav-links">
+
                 <a href="#accueil">Accueil</a>
+
                 <a href="#restaurant">Restaurant</a>
+
                 <a href="#menu">Menu</a>
+
                 <a href="#contact">Contact</a>
+
             </div>
+
         </nav>
+
     </header>
 
+
+    <!-- =========================
+         CONTENU PRINCIPAL
+    ========================== -->
+
     <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
 
         <section id="accueil" class="hero">
 
@@ -35,11 +66,11 @@
                 </p>
 
                 <h1>
-                    Bienvenue chez<br>
-                    <span>Kadi</span>
+                    Bienvenue<br>
+                    chez <span>Kadi</span>
                 </h1>
 
-                <p>
+                <p class="hero-description">
                     Découvrez une cuisine généreuse,
                     authentique et conviviale.
                 </p>
@@ -50,8 +81,12 @@
                         Découvrir le menu
                     </a>
 
-                    <a href="tel:0747605803" class="btn secondary">
-                        Appeler
+                    <a
+                        href="https://wa.me/2250747605803"
+                        class="btn secondary"
+                        target="_blank"
+                    >
+                        WhatsApp
                     </a>
 
                 </div>
@@ -60,6 +95,10 @@
 
         </section>
 
+
+        <!-- =========================
+             PRESENTATION
+        ========================== -->
 
         <section id="restaurant" class="section">
 
@@ -72,52 +111,66 @@
             </h2>
 
             <p class="description">
-                Restaurant chez Kadi vous accueille à
+                Restaurant Chez Kadi vous accueille à
                 Adiopodoumé dans une ambiance conviviale.
+                Venez profiter d'un moment agréable autour
+                d'une cuisine généreuse.
             </p>
 
-        </section>
+
+            <div class="features">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🍽️
+                    </div>
+
+                    <h3>
+                        Cuisine généreuse
+                    </h3>
+
+                    <p>
+                        Des repas préparés pour vous offrir
+                        un moment agréable.
+                    </p>
+
+                </div>
 
 
-        <section id="menu" class="section menu-section">
+                <div class="feature-card">
 
-            <p class="section-label">
-                À LA CARTE
-            </p>
+                    <div class="feature-icon">
+                        🤝
+                    </div>
 
-            <h2>Notre menu</h2>
+                    <h3>
+                        Ambiance conviviale
+                    </h3>
 
-            <div class="menu-card">
+                    <p>
+                        Un cadre où vous pouvez venir
+                        partager un bon moment.
+                    </p>
 
-                <h3>🍽️ Nos spécialités</h3>
-
-                <p>
-                    Le menu et les spécialités du jour
-                    seront bientôt disponibles.
-                </p>
-
-                <a href="tel:0747605803" class="btn primary">
-                    Nous appeler
-                </a>
-
-            </div>
-
-        </section>
+                </div>
 
 
-        <section class="section">
+                <div class="feature-card">
 
-            <p class="section-label">
-                HORAIRES
-            </p>
+                    <div class="feature-icon">
+                        📍
+                    </div>
 
-            <h2>Quand nous rendre visite ?</h2>
+                    <h3>
+                        À Adiopodoumé
+                    </h3>
 
-            <div class="hours">
+                    <p>
+                        Retrouvez facilement le restaurant
+                        à Adiopodoumé.
+                    </p>
 
-                <div>
-                    <span>Lundi — Dimanche</span>
-                    <strong>08h30 — 20h00</strong>
                 </div>
 
             </div>
@@ -125,36 +178,256 @@
         </section>
 
 
-        <section id="contact" class="section contact-section">
+        <!-- =========================
+             MENU
+        ========================== -->
+
+        <section id="menu" class="section menu-section">
 
             <p class="section-label">
-                CONTACT
+                À LA CARTE
             </p>
 
             <h2>
-                Venez nous découvrir.
+                Notre menu
             </h2>
 
-            <p>
-                📍 Adiopodoumé, Côte d'Ivoire
+            <p class="description">
+                Découvrez nos spécialités et les plats
+                disponibles au restaurant.
             </p>
 
-            <p>
-                📞 07 47 60 58 03
+
+            <div class="menu-grid">
+
+
+                <div class="menu-card">
+
+                    <div class="menu-image">
+                        🍛
+                    </div>
+
+                    <div class="menu-info">
+
+                        <h3>
+                            Spécialités du restaurant
+                        </h3>
+
+                        <p>
+                            Les plats disponibles et les
+                            spécialités du jour seront
+                            présentés ici.
+                        </p>
+
+                        <span class="menu-price">
+                            Prix sur place
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="menu-card">
+
+                    <div class="menu-image">
+                        🍲
+                    </div>
+
+                    <div class="menu-info">
+
+                        <h3>
+                            Plats du jour
+                        </h3>
+
+                        <p>
+                            Retrouvez les plats proposés
+                            selon les disponibilités du jour.
+                        </p>
+
+                        <span class="menu-price">
+                            Prix sur place
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="menu-card">
+
+                    <div class="menu-image">
+                        🥘
+                    </div>
+
+                    <div class="menu-info">
+
+                        <h3>
+                            À découvrir
+                        </h3>
+
+                        <p>
+                            La carte complète sera bientôt
+                            disponible sur le site.
+                        </p>
+
+                        <span class="menu-price">
+                            Nous contacter
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <a
+                href="tel:0747605803"
+                class="btn primary menu-button"
+            >
+                Demander le menu
+            </a>
+
+        </section>
+
+
+        <!-- =========================
+             HORAIRES
+        ========================== -->
+
+        <section class="section hours-section">
+
+            <p class="section-label">
+                HORAIRES
             </p>
 
-            <div class="buttons">
+            <h2>
+                Quand nous rendre visite ?
+            </h2>
 
-                <a href="tel:0747605803" class="btn primary">
-                    Appeler maintenant
-                </a>
 
-                <a
-                    href="https://wa.me/2250747605803"
-                    class="btn secondary"
-                >
-                    WhatsApp
-                </a>
+            <div class="hours">
+
+                <div>
+
+                    <span>
+                        Lundi — Dimanche
+                    </span>
+
+                    <strong>
+                        08h30 — 20h00
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LOCALISATION
+        ========================== -->
+
+        <section class="location-section">
+
+            <div class="location-content">
+
+                <div>
+
+                    <p class="section-label">
+                        NOUS TROUVER
+                    </p>
+
+                    <h2>
+                        Rendez-nous visite.
+                    </h2>
+
+                    <p>
+                        📍 Adiopodoumé, Côte d'Ivoire
+                    </p>
+
+                    <p class="location-text">
+                        Venez découvrir le restaurant
+                        Chez Kadi et profiter d'un moment
+                        convivial.
+                    </p>
+
+                </div>
+
+
+                <div class="location-card">
+
+                    <div class="map-icon">
+                        📍
+                    </div>
+
+                    <h3>
+                        Restaurant Chez Kadi
+                    </h3>
+
+                    <p>
+                        Adiopodoumé
+                    </p>
+
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Restaurant+Chez+Kadi+Adiopodoumé+Côte+d'Ivoire"
+                        target="_blank"
+                        class="btn primary"
+                    >
+                        Voir l'itinéraire
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section id="contact" class="contact-section">
+
+            <div class="contact-content">
+
+                <p class="section-label">
+                    CONTACT
+                </p>
+
+                <h2>
+                    Une question ?
+                    Contactez-nous.
+                </h2>
+
+                <p>
+                    📞 07 47 60 58 03
+                </p>
+
+
+                <div class="buttons">
+
+                    <a
+                        href="tel:0747605803"
+                        class="btn primary"
+                    >
+                        Appeler maintenant
+                    </a>
+
+
+                    <a
+                        href="https://wa.me/2250747605803"
+                        target="_blank"
+                        class="btn secondary"
+                    >
+                        Écrire sur WhatsApp
+                    </a>
+
+                </div>
 
             </div>
 
@@ -163,19 +436,33 @@
     </main>
 
 
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
-        <h3>Chez Kadi</h3>
+        <h3>
+            Chez Kadi
+        </h3>
 
         <p>
             Restaurant à Adiopodoumé
         </p>
 
-        <p>
-            © 2026 Restaurant chez Kadi
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © 2026 Restaurant Chez Kadi
+        </p>
+
+        <p class="made-by">
+            Site vitrine réalisé par Stalay Digital
         </p>
 
     </footer>
 
+
 </body>
+
 </html>
